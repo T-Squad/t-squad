@@ -4,6 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -11,7 +12,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <title>Pizza Time!</title>
 </head>
 
 <body>
@@ -34,34 +37,80 @@
             </ul>
         </div>
     </nav>
+    <!-- Jumbotron start-->
     <div class="jumbotron jumbotron-fluid pizza__landing">
         <div class="container">
             <h1 class="display-4">Pizz(R)</h1>
         </div>
     </div>
+    <!-- jumbotron End-->
+    <!-- main contents Start-->
     <div class="container">
         <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
                 <h1>Hello, world!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In cum accusamus alias cumque nisi, incidunt magni perferendis dignissimos numquam laborum asperiores veritatis sed voluptatibus itaque impedit saepe fuga perspiciatis earum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt, minus doloremque quaerat quibusdam, sapiente harum! Aut nihil non, ad ducimus quis adipisci blanditiis aliquid ipsa alias id, asperiores nisi.</p>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Search</label>
-                        <input class="form-control form-control-lg" type="text" placeholder="Search For Pizza!!">                        
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+               
+            <!-- Search button (temp) -->
+                <div id="searchBtn">
+                    <nav class="navbar navbar-light bg-faded justify-content-between">
+                        <a class="navbar-brand">Search</a>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Location">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Find it!</button>
+                        </form>
+                    </nav>
+                </div>
             </div>
+        </div>
+        <hr>
+        <!-- Business & Map info -->
+        <div id="secondaryContents">
+            <!-- Store Info-->
+            <div id="placeInfo">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="assets/images/sampleImage.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Map info-->
+            <div id="sideBarMap">
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/sampleMap.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <hr>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="assets/images/slideimage1.jpg" style="width:100%">
+        <img class="mySlides" src="assets/images/slideimage2.jpg" style="width:100%">
+        <img class="mySlides" src="assets/images/slideimage3.jpg" style="width:100%">
+        <img class="mySlides" src="assets/images/Banner.png" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2018 Copyright: <a href="https://www.MDBootstrap.com"></a>
         </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="assets/javascript/keys.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>
