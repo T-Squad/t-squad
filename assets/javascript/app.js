@@ -1,3 +1,25 @@
+
+<<<<<<< htmlcsschange
+
+
+/*var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}*/
+=======
 // set variables for API Keys
 
 // YELP API INFORMATION
@@ -39,7 +61,7 @@ $(function() {
             url: proxyURL + yelpURL,
             method: 'GET',
             // headers: {
-            // 	authorization: 'Bearer' + YELP_API
+            //  authorization: 'Bearer' + YELP_API
             // }
             beforeSend: function(xhr, settings) {
                 xhr.setRequestHeader('Authorization', 'Bearer ' + YELP_API);
@@ -48,10 +70,10 @@ $(function() {
                 console.log(response)
             }
         // }).done(response, => {
-        // 	console.log(response);
+        //  console.log(response);
         }).done(function(data){
-        	let businessText = JSON.stringify(data.businesses);
-        	$('#locationInfo').text(businessText);
+            let businessText = JSON.stringify(data.businesses);
+            $('#locationInfo').text(businessText);
         });
     });
 
@@ -74,9 +96,9 @@ $(function() {
 
 
 // let appLocation = $.getJSON('https://ipinfo.io', function(data){
-// 	console.log(data);
-// 	appLocation = data.city;
-// 	$('#locationInfo').text(data.city);
+//  console.log(data);
+//  appLocation = data.city;
+//  $('#locationInfo').text(data.city);
 // });
 
 
@@ -85,10 +107,11 @@ $(function() {
 // const YELP_API = 'https://api.yelp.com/v3/businesses/search' + appLocation;
 
 // $.ajax({
-// 	url: YELP_API,
-// 	method: 'GET'
+//  url: YELP_API,
+//  method: 'GET'
 // }).done(function(response){
-// 	console.log(response);
+//  console.log(response);
 // });
 
 // &filter=1  &radius=152  &sort_by=distance
+>>>>>>> master
