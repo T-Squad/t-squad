@@ -1,9 +1,75 @@
 body {
-	background: red;
-	color: white;
-	font-family: sans-serif;
+    background: red;
+    color: white;
+    font-family: sans-serif;
 }
-.jumbotron{
-	margin:0 auto;
-	text-align:center;
+
+.jumbotron {
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('../images/Banner.png');
+    height: 300px;
+    color: #fff;
+    opacity: .80;
+}
+
+.pizza__landing h1 {
+    padding: 100px;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: uppercase;
+}
+
+#placeInfo {
+    float: left;
+}
+
+#sideBarMap {
+    float: right;
+    width: 550px;
+}
+
+.card {
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.footer-copyright {
+    clear: both;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background: silver;
+}
+
+.container {
+    width: 1150px;
+}
+
+.submitBtn {
+    float: right;
+    margin: 10px auto;
+}
+
+.form-group {
+    float: left;
+}
+
+#searchBtn {
+    float: right;
+}
+
+.w3-display-container {
+    margin-bottom: 20px;
+}
+
+#secondaryContents {
+    height: 450px;
+    clear: both;
+}
+.carousel-item img{
+    border-radius: 10px 10px 10px 10px;
+    max-height: 600px;
+    width:100%;
+    margin-bottom:50px;
 }
