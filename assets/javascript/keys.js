@@ -1,0 +1,3 @@
+// yelp api key
+
+const yelpKey = 'tSxkGjdnpSIye3J5wMx-ytgDOG8UekJfaYcukHwiKlA9k64JWO5sZEYHLMdNi3nixSQiHuyhJp10Y64pKthWa_Ph3ALBlye_zMM9YObjBzhjN0Lh_VQuAD395v9XWnYx';
