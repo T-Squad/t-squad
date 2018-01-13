@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-// set variables for API Keys
-
-// YELP API INFORMATION
-
-// GEOLOCATION API INFORMATION
-
-// GOOGLE MAPS API INFORMATION
-
-// ======================================= //
 
 
 // LOCATION 
@@ -72,5 +62,3 @@ function init() {
 }
 // start the app
 init();
-=======
->>>>>>> 797c0f83f0dd019135ecf07128d1e0be106ee843
