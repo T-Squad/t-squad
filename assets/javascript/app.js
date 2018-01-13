@@ -69,5 +69,5 @@ function init() {
         });
     });
 }
-
+// start the app
 init();
