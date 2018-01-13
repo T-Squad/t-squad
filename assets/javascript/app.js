@@ -39,7 +39,7 @@ $(function() {
             url: proxyURL + yelpURL,
             method: 'GET',
             // headers: {
-            // 	authorization: 'Bearer' + YELP_API
+            //  authorization: 'Bearer' + YELP_API
             // }
             beforeSend: function(xhr, settings) {
                 xhr.setRequestHeader('Authorization', 'Bearer ' + YELP_API);
@@ -48,47 +48,9 @@ $(function() {
                 console.log(response)
             }
         // }).done(response, => {
-        // 	console.log(response);
+        //  console.log(response);
         }).done(function(data){
-        	let businessText = JSON.stringify(data.businesses);
-        	$('#locationInfo').text(businessText);
+            let businessText = JSON.parse(data);
+            $('#locationInfo').text(businessText);
         });
     });
-
-    // var token = "access token goes here";
-    // var queryURL = 'https://api.yelp.com/v3/businesses/search?term=pizza&latitude=' + lat + '&longitude=' + long + 'filter=1&limit=1';
-    // $.ajax({
-    //     url: queryURL,
-    //     method: 'GET',
-    //     beforeSend: function(xhr, settings) { xhr.setRequestHeader('Authorization', 'Bearer ' + YELP_API); },
-    //     complete: function(response) { console.log(response) }
-    // });
-
-
-
-
-});
-
-
-
-
-
-// let appLocation = $.getJSON('https://ipinfo.io', function(data){
-// 	console.log(data);
-// 	appLocation = data.city;
-// 	$('#locationInfo').text(data.city);
-// });
-
-
-// YELP
-
-// const YELP_API = 'https://api.yelp.com/v3/businesses/search' + appLocation;
-
-// $.ajax({
-// 	url: YELP_API,
-// 	method: 'GET'
-// }).done(function(response){
-// 	console.log(response);
-// });
-
-// &filter=1  &radius=152  &sort_by=distance
