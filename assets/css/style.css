@@ -1,7 +1,9 @@
 body {
     background: red;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Eater', cursive;
+
+
 }
 
 .jumbotron {
@@ -32,6 +34,7 @@ body {
 .card {
     padding: 15px 15px 15px 15px;
     margin-bottom: 20px;
+    
 }
 
 .footer-copyright {
@@ -171,4 +174,12 @@ button:hover {
 form{
     margin:0 auto;
     width: 750px;
+}
+.wrapper{
+  max-width: 940px;
+  margin: 0 auto;
+
+}
+.row{
+  text-align: center;
 }
