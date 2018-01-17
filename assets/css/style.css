@@ -10,6 +10,7 @@ body {
     color: #fff;
     opacity: .80;
 }
+
 .wrapper{
 
   margin-bottom:30px;
@@ -74,6 +75,7 @@ body {
   padding:15px 0 15px 0;
   border-radius:10px 10px 10px 10px;
   text-align: center;
+  width:1080px;
 }
 .infoRow h2{
   margin: 10px 0 15px 0;
@@ -159,6 +161,7 @@ hr {
 
 .containerJ button:hover {
   opacity:1;
+  background-color:yellow;
 }
 
 /* Extra styles for the cancel button */
@@ -192,13 +195,28 @@ hr {
   }
 }
 
- .action_page.php{
-    margin:0 auto;
-    width: 750px;
-}
+
 .cardinfo{
   margin:0 auto;
   padding: 15px 15px 15px 15px;
   margin-bottom:20px;
 }
 
+#googlemap{
+  height:333px;
+  width:510px;
+}
+#titleIcon{
+  border-radius:15px 15px 15px 15px;
+}
+
+.joinupContainer{
+  width:1080px;
+  margin:0 auto;
+  margin-bottom:20px;
+
+}
+.containerJ{
+  padding:10px 10px 10px 10px;
+  margin:0 auto;
+}
